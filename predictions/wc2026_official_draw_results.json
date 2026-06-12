@@ -1,0 +1,382 @@
+{
+  "official_groups": {
+    "A": [
+      "Mexico",
+      "South Africa",
+      "Korea Republic",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Italy",
+      "Qatar",
+      "Switzerland"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Haiti",
+      "Scotland"
+    ],
+    "D": [
+      "USA",
+      "Paraguay",
+      "Australia",
+      "Slovakia"
+    ],
+    "E": [
+      "Germany",
+      "Cura\u00e7ao",
+      "C\u00f4te d'Ivoire",
+      "Ecuador"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Poland",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Cabo Verde",
+      "Saudi Arabia",
+      "Uruguay"
+    ],
+    "I": [
+      "France",
+      "Senegal",
+      "Bolivia",
+      "Norway"
+    ],
+    "J": [
+      "Argentina",
+      "Algeria",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "Jamaica",
+      "Uzbekistan",
+      "Colombia"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "group_standings": {
+    "A": [
+      "Mexico",
+      "Korea Republic",
+      "South Africa",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Qatar",
+      "Italy",
+      "Switzerland"
+    ],
+    "C": [
+      "Haiti",
+      "Scotland",
+      "Brazil",
+      "Morocco"
+    ],
+    "D": [
+      "Australia",
+      "Paraguay",
+      "USA",
+      "Slovakia"
+    ],
+    "E": [
+      "C\u00f4te d'Ivoire",
+      "Cura\u00e7ao",
+      "Germany",
+      "Ecuador"
+    ],
+    "F": [
+      "Tunisia",
+      "Japan",
+      "Poland",
+      "Netherlands"
+    ],
+    "G": [
+      "Iran",
+      "New Zealand",
+      "Egypt",
+      "Belgium"
+    ],
+    "H": [
+      "Uruguay",
+      "Saudi Arabia",
+      "Spain",
+      "Cabo Verde"
+    ],
+    "I": [
+      "Norway",
+      "France",
+      "Bolivia",
+      "Senegal"
+    ],
+    "J": [
+      "Algeria",
+      "Argentina",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Colombia",
+      "Portugal",
+      "Jamaica",
+      "Uzbekistan"
+    ],
+    "L": [
+      "Croatia",
+      "Panama",
+      "Ghana",
+      "England"
+    ]
+  },
+  "bye_teams_R32": [
+    "Croatia",
+    "Tunisia",
+    "Iran",
+    "Uruguay"
+  ],
+  "r32_matches": [
+    [
+      "France",
+      "Mexico",
+      "France"
+    ],
+    [
+      "Brazil",
+      "Haiti",
+      "Haiti"
+    ],
+    [
+      "Italy",
+      "C\u00f4te d'Ivoire",
+      "C\u00f4te d'Ivoire"
+    ],
+    [
+      "Spain",
+      "Scotland",
+      "Spain"
+    ],
+    [
+      "Korea Republic",
+      "Cura\u00e7ao",
+      "Korea Republic"
+    ],
+    [
+      "Saudi Arabia",
+      "New Zealand",
+      "New Zealand"
+    ],
+    [
+      "Ghana",
+      "Egypt",
+      "Ghana"
+    ],
+    [
+      "Argentina",
+      "Austria",
+      "Austria"
+    ],
+    [
+      "Colombia",
+      "Japan",
+      "Japan"
+    ],
+    [
+      "Portugal",
+      "USA",
+      "Portugal"
+    ],
+    [
+      "Poland",
+      "Paraguay",
+      "Paraguay"
+    ],
+    [
+      "Norway",
+      "Canada",
+      "Canada"
+    ]
+  ],
+  "r16_matches": [
+    [
+      "France",
+      "Spain",
+      "France"
+    ],
+    [
+      "Croatia",
+      "Korea Republic",
+      "Korea Republic"
+    ],
+    [
+      "Tunisia",
+      "Iran",
+      "Tunisia"
+    ],
+    [
+      "Ghana",
+      "Uruguay",
+      "Uruguay"
+    ],
+    [
+      "Portugal",
+      "Canada",
+      "Portugal"
+    ],
+    [
+      "Paraguay",
+      "Japan",
+      "Japan"
+    ],
+    [
+      "Haiti",
+      "C\u00f4te d'Ivoire",
+      "Haiti"
+    ],
+    [
+      "New Zealand",
+      "Austria",
+      "New Zealand"
+    ]
+  ],
+  "qf_matches": [
+    [
+      "France",
+      "Korea Republic",
+      "Korea Republic"
+    ],
+    [
+      "Tunisia",
+      "Uruguay",
+      "Tunisia"
+    ],
+    [
+      "Portugal",
+      "Japan",
+      "Portugal"
+    ],
+    [
+      "Haiti",
+      "New Zealand",
+      "New Zealand"
+    ]
+  ],
+  "sf_matches": [
+    [
+      "Korea Republic",
+      "Tunisia",
+      "Tunisia"
+    ],
+    [
+      "Portugal",
+      "New Zealand",
+      "New Zealand"
+    ]
+  ],
+  "final": [
+    "Tunisia",
+    "New Zealand",
+    "New Zealand"
+  ],
+  "champion_single_run": "New Zealand",
+  "championship_probability_mc1000": [
+    [
+      "France",
+      12.69999999999997
+    ],
+    [
+      "Brazil",
+      6.199999999999994
+    ],
+    [
+      "Germany",
+      6.199999999999994
+    ],
+    [
+      "Netherlands",
+      6.099999999999994
+    ],
+    [
+      "Korea Republic",
+      4.799999999999999
+    ],
+    [
+      "Spain",
+      4.100000000000001
+    ],
+    [
+      "Uruguay",
+      3.900000000000002
+    ],
+    [
+      "Italy",
+      3.700000000000002
+    ],
+    [
+      "Croatia",
+      3.700000000000002
+    ],
+    [
+      "Tunisia",
+      3.4000000000000017
+    ],
+    [
+      "Belgium",
+      3.3000000000000016
+    ],
+    [
+      "Colombia",
+      2.9000000000000012
+    ],
+    [
+      "Iran",
+      2.700000000000001
+    ],
+    [
+      "Argentina",
+      2.700000000000001
+    ],
+    [
+      "Saudi Arabia",
+      2.600000000000001
+    ],
+    [
+      "Ghana",
+      2.400000000000001
+    ],
+    [
+      "Morocco",
+      2.0000000000000004
+    ],
+    [
+      "Slovakia",
+      1.9000000000000006
+    ],
+    [
+      "England",
+      1.8000000000000005
+    ],
+    [
+      "Senegal",
+      1.7000000000000004
+    ]
+  ]
+}

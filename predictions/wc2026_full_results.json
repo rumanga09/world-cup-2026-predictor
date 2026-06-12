@@ -1,0 +1,372 @@
+{
+  "model": "RandomForest + Elo",
+  "matches_trained": 158,
+  "cv_accuracy": "80.0%",
+  "teams": 48,
+  "groups": {
+    "A": {
+      "teams": [
+        "Mexico",
+        "Canada",
+        "USA",
+        "El Salvador"
+      ],
+      "standings": [
+        "Mexico",
+        "El Salvador",
+        "USA",
+        "Canada"
+      ]
+    },
+    "B": {
+      "teams": [
+        "Argentina",
+        "Chile",
+        "Paraguay",
+        "Bolivia"
+      ],
+      "standings": [
+        "Argentina",
+        "Paraguay",
+        "Chile",
+        "Bolivia"
+      ]
+    },
+    "C": {
+      "teams": [
+        "Brazil",
+        "Colombia",
+        "Ecuador",
+        "Venezuela"
+      ],
+      "standings": [
+        "Venezuela",
+        "Ecuador",
+        "Brazil",
+        "Colombia"
+      ]
+    },
+    "D": {
+      "teams": [
+        "Uruguay",
+        "Peru",
+        "Panama",
+        "Costa Rica"
+      ],
+      "standings": [
+        "Panama",
+        "Peru",
+        "Uruguay",
+        "Costa Rica"
+      ]
+    },
+    "E": {
+      "teams": [
+        "France",
+        "Netherlands",
+        "Austria",
+        "Slovenia"
+      ],
+      "standings": [
+        "Austria",
+        "Netherlands",
+        "France",
+        "Slovenia"
+      ]
+    },
+    "F": {
+      "teams": [
+        "Spain",
+        "Portugal",
+        "Ukraine",
+        "Slovakia"
+      ],
+      "standings": [
+        "Slovakia",
+        "Portugal",
+        "Ukraine",
+        "Spain"
+      ]
+    },
+    "G": {
+      "teams": [
+        "Germany",
+        "Croatia",
+        "Poland",
+        "Wales"
+      ],
+      "standings": [
+        "Poland",
+        "Croatia",
+        "Wales",
+        "Germany"
+      ]
+    },
+    "H": {
+      "teams": [
+        "England",
+        "Denmark",
+        "Switzerland",
+        "Scotland"
+      ],
+      "standings": [
+        "Scotland",
+        "Switzerland",
+        "England",
+        "Denmark"
+      ]
+    },
+    "I": {
+      "teams": [
+        "Belgium",
+        "Italy",
+        "Turkey",
+        "Hungary"
+      ],
+      "standings": [
+        "Italy",
+        "Turkey",
+        "Belgium",
+        "Hungary"
+      ]
+    },
+    "J": {
+      "teams": [
+        "Japan",
+        "South Korea",
+        "Saudi Arabia",
+        "Qatar"
+      ],
+      "standings": [
+        "South Korea",
+        "Saudi Arabia",
+        "Japan",
+        "Qatar"
+      ]
+    },
+    "K": {
+      "teams": [
+        "Morocco",
+        "Senegal",
+        "Egypt",
+        "Tunisia"
+      ],
+      "standings": [
+        "Tunisia",
+        "Morocco",
+        "Senegal",
+        "Egypt"
+      ]
+    },
+    "L": {
+      "teams": [
+        "Nigeria",
+        "Algeria",
+        "Cameroon",
+        "Ghana"
+      ],
+      "standings": [
+        "Algeria",
+        "Ghana",
+        "Cameroon",
+        "Nigeria"
+      ]
+    }
+  },
+  "r32_matches": [
+    [
+      "Netherlands",
+      "Mexico",
+      "Mexico"
+    ],
+    [
+      "Croatia",
+      "Ecuador",
+      "Ecuador"
+    ],
+    [
+      "Saudi Arabia",
+      "Cameroon",
+      "Cameroon"
+    ],
+    [
+      "Belgium",
+      "Paraguay",
+      "Belgium"
+    ],
+    [
+      "Morocco",
+      "Switzerland",
+      "Morocco"
+    ],
+    [
+      "Ghana",
+      "Panama",
+      "Panama"
+    ],
+    [
+      "Uruguay",
+      "Ukraine",
+      "Uruguay"
+    ],
+    [
+      "Portugal",
+      "Algeria",
+      "Algeria"
+    ],
+    [
+      "Turkey",
+      "Poland",
+      "Poland"
+    ],
+    [
+      "El Salvador",
+      "Slovakia",
+      "El Salvador"
+    ],
+    [
+      "Scotland",
+      "Peru",
+      "Peru"
+    ],
+    [
+      "Austria",
+      "South Korea",
+      "South Korea"
+    ]
+  ],
+  "r16_matches": [
+    [
+      "Italy",
+      "Tunisia",
+      "Italy"
+    ],
+    [
+      "Belgium",
+      "Morocco",
+      "Morocco"
+    ],
+    [
+      "Uruguay",
+      "Argentina",
+      "Argentina"
+    ],
+    [
+      "Venezuela",
+      "El Salvador",
+      "El Salvador"
+    ],
+    [
+      "South Korea",
+      "Peru",
+      "South Korea"
+    ],
+    [
+      "Poland",
+      "Algeria",
+      "Algeria"
+    ],
+    [
+      "Panama",
+      "Cameroon",
+      "Panama"
+    ],
+    [
+      "Ecuador",
+      "Mexico",
+      "Ecuador"
+    ]
+  ],
+  "qf_matches": [
+    [
+      "Italy",
+      "Morocco",
+      "Morocco"
+    ],
+    [
+      "Argentina",
+      "El Salvador",
+      "Argentina"
+    ],
+    [
+      "South Korea",
+      "Algeria",
+      "South Korea"
+    ],
+    [
+      "Panama",
+      "Ecuador",
+      "Ecuador"
+    ]
+  ],
+  "sf_matches": [
+    [
+      "Morocco",
+      "Argentina",
+      "Argentina"
+    ],
+    [
+      "South Korea",
+      "Ecuador",
+      "Ecuador"
+    ]
+  ],
+  "final": [
+    [
+      "Argentina",
+      "Ecuador",
+      "Ecuador"
+    ]
+  ],
+  "champion": "Ecuador",
+  "championship_probability": {
+    "Brazil": 9.3,
+    "France": 8.5,
+    "Germany": 5.6000000000000005,
+    "Argentina": 3.8,
+    "Bolivia": 3.8,
+    "Netherlands": 3.8,
+    "Colombia": 3.5000000000000004,
+    "Uruguay": 3.0,
+    "El Salvador": 3.0,
+    "Tunisia": 2.8000000000000003,
+    "Italy": 2.8000000000000003,
+    "Chile": 2.6,
+    "Costa Rica": 2.5,
+    "Venezuela": 2.5,
+    "Panama": 2.1,
+    "Paraguay": 2.0,
+    "Peru": 2.0,
+    "Morocco": 1.9,
+    "Belgium": 1.9,
+    "South Korea": 1.9,
+    "Spain": 1.7999999999999998,
+    "Ghana": 1.7000000000000002,
+    "Croatia": 1.7000000000000002,
+    "Egypt": 1.6,
+    "Saudi Arabia": 1.5,
+    "Algeria": 1.5,
+    "Mexico": 1.4000000000000001,
+    "Hungary": 1.4000000000000001,
+    "England": 1.3,
+    "USA": 1.3,
+    "Scotland": 1.3,
+    "Turkey": 1.2,
+    "Canada": 1.2,
+    "Ecuador": 1.2,
+    "Senegal": 1.0999999999999999,
+    "Qatar": 1.0999999999999999,
+    "Portugal": 1.0,
+    "Denmark": 1.0,
+    "Slovakia": 1.0,
+    "Wales": 0.8999999999999999,
+    "Poland": 0.8999999999999999,
+    "Austria": 0.8999999999999999,
+    "Cameroon": 0.7000000000000001,
+    "Japan": 0.5,
+    "Ukraine": 0.4,
+    "Nigeria": 0.4,
+    "Switzerland": 0.4,
+    "Slovenia": 0.3
+  }
+}
