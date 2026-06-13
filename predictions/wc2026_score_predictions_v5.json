@@ -1,0 +1,1836 @@
+{
+  "dataset_matches": 32359,
+  "elo_ratings": {
+    "Argentina": 1995.0,
+    "Spain": 1984.9,
+    "France": 1935.4,
+    "Japan": 1909.2,
+    "Portugal": 1907.9,
+    "Morocco": 1907.1,
+    "Brazil": 1902.4,
+    "Germany": 1894.0,
+    "England": 1891.5,
+    "Colombia": 1889.2,
+    "Netherlands": 1871.7,
+    "Croatia": 1871.2,
+    "Ecuador": 1854.6,
+    "Mexico": 1847.2,
+    "Algeria": 1846.2,
+    "Austria": 1844.3,
+    "Belgium": 1834.4,
+    "Iran": 1833.2,
+    "Senegal": 1831.5,
+    "Switzerland": 1829.8,
+    "Uruguay": 1818.2,
+    "Australia": 1816.8,
+    "Norway": 1810.2,
+    "Ivory Coast": 1787.1,
+    "Uzbekistan": 1779.3,
+    "Paraguay": 1776.3,
+    "Egypt": 1769.7,
+    "Sweden": 1757.2,
+    "Iraq": 1740.5,
+    "Canada": 1735.8,
+    "Scotland": 1727.3,
+    "Panama": 1714.3,
+    "Saudi Arabia": 1697.0,
+    "Jordan": 1687.3,
+    "Tunisia": 1682.1,
+    "Haiti": 1649.0,
+    "South Africa": 1637.1,
+    "New Zealand": 1625.8,
+    "Qatar": 1614.2,
+    "Ghana": 1610.8,
+    "Cura\u00e7ao": 1573.4,
+    "Czechia": 1379.5,
+    "Congo": 1351.9,
+    "USA": 1330.4,
+    "Korea Republic": 1320.5,
+    "Bosnia-Herzegovina": 1313.8,
+    "Cabo Verde": 1300,
+    "T\u00fcrkiye": 1300
+  },
+  "known_results_actual": {
+    "Jun 11": [
+      "Mexico 2-0 South Africa",
+      "Korea Republic 2-1 Czechia"
+    ],
+    "Jun 12": [
+      "Canada 1-1 Bosnia and Herzegovina",
+      "USA 1-0 Paraguay"
+    ]
+  },
+  "all_match_predictions": [
+    {
+      "group": "A",
+      "date": "Jun 11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "home_goals": 2,
+      "away_goals": 0,
+      "home_elo": 1847.2,
+      "away_elo": 1637.1,
+      "home_win_prob": 77.0,
+      "is_actual": true
+    },
+    {
+      "group": "A",
+      "date": "Jun 11",
+      "home": "Korea Republic",
+      "away": "Czechia",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_elo": 1320.5,
+      "away_elo": 1379.5,
+      "home_win_prob": 41.6,
+      "is_actual": true
+    },
+    {
+      "group": "A",
+      "date": "Jun 18",
+      "home": "Czechia",
+      "away": "South Africa",
+      "home_goals": 4,
+      "away_goals": 2,
+      "home_elo": 1379.5,
+      "away_elo": 1637.1,
+      "home_win_prob": 18.5,
+      "is_actual": false
+    },
+    {
+      "group": "A",
+      "date": "Jun 18",
+      "home": "Mexico",
+      "away": "Korea Republic",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_elo": 1847.2,
+      "away_elo": 1320.5,
+      "home_win_prob": 95.4,
+      "is_actual": false
+    },
+    {
+      "group": "A",
+      "date": "Jun 24",
+      "home": "Czechia",
+      "away": "Mexico",
+      "home_goals": 3,
+      "away_goals": 0,
+      "home_elo": 1379.5,
+      "away_elo": 1847.2,
+      "home_win_prob": 6.3,
+      "is_actual": false
+    },
+    {
+      "group": "A",
+      "date": "Jun 24",
+      "home": "South Africa",
+      "away": "Korea Republic",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_elo": 1637.1,
+      "away_elo": 1320.5,
+      "home_win_prob": 86.1,
+      "is_actual": false
+    },
+    {
+      "group": "B",
+      "date": "Jun 12",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1735.8,
+      "away_elo": 1313.8,
+      "home_win_prob": 91.9,
+      "is_actual": true
+    },
+    {
+      "group": "B",
+      "date": "Jun 13",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1614.2,
+      "away_elo": 1829.8,
+      "home_win_prob": 22.4,
+      "is_actual": false
+    },
+    {
+      "group": "B",
+      "date": "Jun 18",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1829.8,
+      "away_elo": 1313.8,
+      "home_win_prob": 95.1,
+      "is_actual": false
+    },
+    {
+      "group": "B",
+      "date": "Jun 18",
+      "home": "Canada",
+      "away": "Qatar",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_elo": 1735.8,
+      "away_elo": 1614.2,
+      "home_win_prob": 66.8,
+      "is_actual": false
+    },
+    {
+      "group": "B",
+      "date": "Jun 24",
+      "home": "Switzerland",
+      "away": "Canada",
+      "home_goals": 5,
+      "away_goals": 3,
+      "home_elo": 1829.8,
+      "away_elo": 1735.8,
+      "home_win_prob": 63.2,
+      "is_actual": false
+    },
+    {
+      "group": "B",
+      "date": "Jun 24",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_elo": 1313.8,
+      "away_elo": 1614.2,
+      "home_win_prob": 15.1,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 13",
+      "home": "Brazil",
+      "away": "Morocco",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_elo": 1902.4,
+      "away_elo": 1907.1,
+      "home_win_prob": 49.3,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 13",
+      "home": "Haiti",
+      "away": "Scotland",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_elo": 1649.0,
+      "away_elo": 1727.3,
+      "home_win_prob": 38.9,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 19",
+      "home": "Scotland",
+      "away": "Morocco",
+      "home_goals": 3,
+      "away_goals": 4,
+      "home_elo": 1727.3,
+      "away_elo": 1907.1,
+      "home_win_prob": 26.2,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 19",
+      "home": "Brazil",
+      "away": "Haiti",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1902.4,
+      "away_elo": 1649.0,
+      "home_win_prob": 81.1,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 24",
+      "home": "Scotland",
+      "away": "Brazil",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_elo": 1727.3,
+      "away_elo": 1902.4,
+      "home_win_prob": 26.7,
+      "is_actual": false
+    },
+    {
+      "group": "C",
+      "date": "Jun 24",
+      "home": "Morocco",
+      "away": "Haiti",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1907.1,
+      "away_elo": 1649.0,
+      "home_win_prob": 81.5,
+      "is_actual": false
+    },
+    {
+      "group": "D",
+      "date": "Jun 12",
+      "home": "USA",
+      "away": "Paraguay",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1330.4,
+      "away_elo": 1776.3,
+      "home_win_prob": 7.1,
+      "is_actual": true
+    },
+    {
+      "group": "D",
+      "date": "Jun 14",
+      "home": "Australia",
+      "away": "T\u00fcrkiye",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1816.8,
+      "away_elo": 1300,
+      "home_win_prob": 95.1,
+      "is_actual": false
+    },
+    {
+      "group": "D",
+      "date": "Jun 19",
+      "home": "USA",
+      "away": "Australia",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1330.4,
+      "away_elo": 1816.8,
+      "home_win_prob": 5.7,
+      "is_actual": false
+    },
+    {
+      "group": "D",
+      "date": "Jun 19",
+      "home": "T\u00fcrkiye",
+      "away": "Paraguay",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_elo": 1300,
+      "away_elo": 1776.3,
+      "home_win_prob": 6.1,
+      "is_actual": false
+    },
+    {
+      "group": "D",
+      "date": "Jun 25",
+      "home": "T\u00fcrkiye",
+      "away": "USA",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1300,
+      "away_elo": 1330.4,
+      "home_win_prob": 45.6,
+      "is_actual": false
+    },
+    {
+      "group": "D",
+      "date": "Jun 25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1776.3,
+      "away_elo": 1816.8,
+      "home_win_prob": 44.2,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 14",
+      "home": "Germany",
+      "away": "Cura\u00e7ao",
+      "home_goals": 2,
+      "away_goals": 0,
+      "home_elo": 1894.0,
+      "away_elo": 1573.4,
+      "home_win_prob": 86.4,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 14",
+      "home": "C\u00f4te d'Ivoire",
+      "away": "Ecuador",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1787.1,
+      "away_elo": 1854.6,
+      "home_win_prob": 40.4,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 20",
+      "home": "Germany",
+      "away": "C\u00f4te d'Ivoire",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1894.0,
+      "away_elo": 1787.1,
+      "home_win_prob": 64.9,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 20",
+      "home": "Ecuador",
+      "away": "Cura\u00e7ao",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_elo": 1854.6,
+      "away_elo": 1573.4,
+      "home_win_prob": 83.5,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 25",
+      "home": "Cura\u00e7ao",
+      "away": "C\u00f4te d'Ivoire",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_elo": 1573.4,
+      "away_elo": 1787.1,
+      "home_win_prob": 22.6,
+      "is_actual": false
+    },
+    {
+      "group": "E",
+      "date": "Jun 25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "home_goals": 3,
+      "away_goals": 1,
+      "home_elo": 1854.6,
+      "away_elo": 1894.0,
+      "home_win_prob": 44.4,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_elo": 1871.7,
+      "away_elo": 1909.2,
+      "home_win_prob": 44.6,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 14",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "home_goals": 5,
+      "away_goals": 1,
+      "home_elo": 1757.2,
+      "away_elo": 1682.1,
+      "home_win_prob": 60.6,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 20",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "home_goals": 0,
+      "away_goals": 0,
+      "home_elo": 1871.7,
+      "away_elo": 1757.2,
+      "home_win_prob": 65.9,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 21",
+      "home": "Tunisia",
+      "away": "Japan",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1682.1,
+      "away_elo": 1909.2,
+      "home_win_prob": 21.3,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 25",
+      "home": "Japan",
+      "away": "Sweden",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1909.2,
+      "away_elo": 1757.2,
+      "home_win_prob": 70.6,
+      "is_actual": false
+    },
+    {
+      "group": "F",
+      "date": "Jun 25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "home_goals": 3,
+      "away_goals": 0,
+      "home_elo": 1682.1,
+      "away_elo": 1871.7,
+      "home_win_prob": 25.1,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 15",
+      "home": "Belgium",
+      "away": "Egypt",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1834.4,
+      "away_elo": 1769.7,
+      "home_win_prob": 59.2,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 15",
+      "home": "IR Iran",
+      "away": "New Zealand",
+      "home_goals": 5,
+      "away_goals": 1,
+      "home_elo": 1833.2,
+      "away_elo": 1625.8,
+      "home_win_prob": 76.7,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 21",
+      "home": "Belgium",
+      "away": "IR Iran",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_elo": 1834.4,
+      "away_elo": 1833.2,
+      "home_win_prob": 50.2,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 21",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "home_goals": 3,
+      "away_goals": 3,
+      "home_elo": 1625.8,
+      "away_elo": 1769.7,
+      "home_win_prob": 30.4,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 26",
+      "home": "Egypt",
+      "away": "IR Iran",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1769.7,
+      "away_elo": 1833.2,
+      "home_win_prob": 41.0,
+      "is_actual": false
+    },
+    {
+      "group": "G",
+      "date": "Jun 26",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_elo": 1625.8,
+      "away_elo": 1834.4,
+      "home_win_prob": 23.1,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 15",
+      "home": "Spain",
+      "away": "Cabo Verde",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1984.9,
+      "away_elo": 1300,
+      "home_win_prob": 98.1,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 15",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1697.0,
+      "away_elo": 1818.2,
+      "home_win_prob": 33.2,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 21",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_elo": 1984.9,
+      "away_elo": 1697.0,
+      "home_win_prob": 84.0,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 21",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
+      "home_goals": 5,
+      "away_goals": 2,
+      "home_elo": 1818.2,
+      "away_elo": 1300,
+      "home_win_prob": 95.2,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 26",
+      "home": "Cabo Verde",
+      "away": "Saudi Arabia",
+      "home_goals": 6,
+      "away_goals": 2,
+      "home_elo": 1300,
+      "away_elo": 1697.0,
+      "home_win_prob": 9.2,
+      "is_actual": false
+    },
+    {
+      "group": "H",
+      "date": "Jun 26",
+      "home": "Uruguay",
+      "away": "Spain",
+      "home_goals": 5,
+      "away_goals": 4,
+      "home_elo": 1818.2,
+      "away_elo": 1984.9,
+      "home_win_prob": 27.7,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 16",
+      "home": "France",
+      "away": "Senegal",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_elo": 1935.4,
+      "away_elo": 1831.5,
+      "home_win_prob": 64.5,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 16",
+      "home": "Iraq",
+      "away": "Norway",
+      "home_goals": 0,
+      "away_goals": 1,
+      "home_elo": 1740.5,
+      "away_elo": 1810.2,
+      "home_win_prob": 40.1,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 22",
+      "home": "France",
+      "away": "Iraq",
+      "home_goals": 3,
+      "away_goals": 0,
+      "home_elo": 1935.4,
+      "away_elo": 1740.5,
+      "home_win_prob": 75.4,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 22",
+      "home": "Norway",
+      "away": "Senegal",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1810.2,
+      "away_elo": 1831.5,
+      "home_win_prob": 46.9,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 26",
+      "home": "Norway",
+      "away": "France",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1810.2,
+      "away_elo": 1935.4,
+      "home_win_prob": 32.7,
+      "is_actual": false
+    },
+    {
+      "group": "I",
+      "date": "Jun 26",
+      "home": "Senegal",
+      "away": "Iraq",
+      "home_goals": 1,
+      "away_goals": 4,
+      "home_elo": 1831.5,
+      "away_elo": 1740.5,
+      "home_win_prob": 62.8,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 16",
+      "home": "Argentina",
+      "away": "Algeria",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_elo": 1995.0,
+      "away_elo": 1846.2,
+      "home_win_prob": 70.2,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 16",
+      "home": "Austria",
+      "away": "Jordan",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_elo": 1844.3,
+      "away_elo": 1687.3,
+      "home_win_prob": 71.2,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 22",
+      "home": "Argentina",
+      "away": "Austria",
+      "home_goals": 0,
+      "away_goals": 3,
+      "home_elo": 1995.0,
+      "away_elo": 1844.3,
+      "home_win_prob": 70.4,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 22",
+      "home": "Jordan",
+      "away": "Algeria",
+      "home_goals": 0,
+      "away_goals": 1,
+      "home_elo": 1687.3,
+      "away_elo": 1846.2,
+      "home_win_prob": 28.6,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 27",
+      "home": "Algeria",
+      "away": "Austria",
+      "home_goals": 4,
+      "away_goals": 1,
+      "home_elo": 1846.2,
+      "away_elo": 1844.3,
+      "home_win_prob": 50.3,
+      "is_actual": false
+    },
+    {
+      "group": "J",
+      "date": "Jun 27",
+      "home": "Jordan",
+      "away": "Argentina",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_elo": 1687.3,
+      "away_elo": 1995.0,
+      "home_win_prob": 14.5,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 17",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "home_goals": 0,
+      "away_goals": 0,
+      "home_elo": 1907.9,
+      "away_elo": 1351.9,
+      "home_win_prob": 96.1,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 17",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1779.3,
+      "away_elo": 1889.2,
+      "home_win_prob": 34.7,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "home_goals": 4,
+      "away_goals": 1,
+      "home_elo": 1907.9,
+      "away_elo": 1779.3,
+      "home_win_prob": 67.7,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1889.2,
+      "away_elo": 1351.9,
+      "home_win_prob": 95.7,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "home_goals": 4,
+      "away_goals": 2,
+      "home_elo": 1889.2,
+      "away_elo": 1907.9,
+      "home_win_prob": 47.3,
+      "is_actual": false
+    },
+    {
+      "group": "K",
+      "date": "Jun 27",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1351.9,
+      "away_elo": 1779.3,
+      "home_win_prob": 7.9,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 17",
+      "home": "England",
+      "away": "Croatia",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_elo": 1891.5,
+      "away_elo": 1871.2,
+      "home_win_prob": 52.9,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 17",
+      "home": "Ghana",
+      "away": "Panama",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1610.8,
+      "away_elo": 1714.3,
+      "home_win_prob": 35.5,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 23",
+      "home": "England",
+      "away": "Ghana",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_elo": 1891.5,
+      "away_elo": 1610.8,
+      "home_win_prob": 83.4,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 23",
+      "home": "Panama",
+      "away": "Croatia",
+      "home_goals": 4,
+      "away_goals": 0,
+      "home_elo": 1714.3,
+      "away_elo": 1871.2,
+      "home_win_prob": 28.8,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 27",
+      "home": "Panama",
+      "away": "England",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_elo": 1714.3,
+      "away_elo": 1891.5,
+      "home_win_prob": 26.5,
+      "is_actual": false
+    },
+    {
+      "group": "L",
+      "date": "Jun 27",
+      "home": "Croatia",
+      "away": "Ghana",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_elo": 1871.2,
+      "away_elo": 1610.8,
+      "home_win_prob": 81.7,
+      "is_actual": false
+    }
+  ],
+  "group_standings": {
+    "A": {
+      "standings": [
+        "Mexico",
+        "Korea Republic",
+        "South Africa",
+        "Czechia"
+      ],
+      "points": {
+        "Mexico": 14,
+        "Korea Republic": 8,
+        "South Africa": 3,
+        "Czechia": 3
+      },
+      "gd": {
+        "Mexico": 5,
+        "Korea Republic": -1,
+        "South Africa": 0,
+        "Czechia": -4
+      },
+      "gf": {
+        "Mexico": 6,
+        "Korea Republic": 3,
+        "South Africa": 3,
+        "Czechia": 2
+      },
+      "matches": [
+        [
+          "Mexico",
+          "South Africa",
+          2,
+          0,
+          "Mexico"
+        ],
+        [
+          "Mexico",
+          "Korea Republic",
+          2,
+          1,
+          "Mexico"
+        ],
+        [
+          "Mexico",
+          "Czechia",
+          2,
+          0,
+          "Mexico"
+        ],
+        [
+          "South Africa",
+          "Korea Republic",
+          1,
+          0,
+          "South Africa"
+        ],
+        [
+          "South Africa",
+          "Czechia",
+          2,
+          1,
+          "Czechia"
+        ],
+        [
+          "Korea Republic",
+          "Czechia",
+          2,
+          1,
+          "Korea Republic"
+        ]
+      ]
+    },
+    "B": {
+      "standings": [
+        "Canada",
+        "Switzerland",
+        "Qatar",
+        "Bosnia-Herzegovina"
+      ],
+      "points": {
+        "Canada": 5,
+        "Switzerland": 5,
+        "Qatar": 4,
+        "Bosnia-Herzegovina": 1
+      },
+      "gd": {
+        "Canada": 3,
+        "Switzerland": 0,
+        "Qatar": -1,
+        "Bosnia-Herzegovina": -2
+      },
+      "gf": {
+        "Canada": 4,
+        "Switzerland": 1,
+        "Qatar": 3,
+        "Bosnia-Herzegovina": 3
+      },
+      "matches": [
+        [
+          "Canada",
+          "Bosnia-Herzegovina",
+          1,
+          1,
+          "Canada/Bosnia-Herzegovina"
+        ],
+        [
+          "Canada",
+          "Qatar",
+          3,
+          0,
+          "Canada"
+        ],
+        [
+          "Canada",
+          "Switzerland",
+          0,
+          0,
+          "Canada/Switzerland"
+        ],
+        [
+          "Bosnia-Herzegovina",
+          "Qatar",
+          1,
+          3,
+          "Qatar"
+        ],
+        [
+          "Bosnia-Herzegovina",
+          "Switzerland",
+          1,
+          1,
+          "Switzerland"
+        ],
+        [
+          "Qatar",
+          "Switzerland",
+          0,
+          0,
+          "Qatar/Switzerland"
+        ]
+      ]
+    },
+    "C": {
+      "standings": [
+        "Morocco",
+        "Scotland",
+        "Brazil",
+        "Haiti"
+      ],
+      "points": {
+        "Morocco": 5,
+        "Scotland": 4,
+        "Brazil": 4,
+        "Haiti": 3
+      },
+      "gd": {
+        "Morocco": 0,
+        "Scotland": 0,
+        "Brazil": -2,
+        "Haiti": 2
+      },
+      "gf": {
+        "Morocco": 1,
+        "Scotland": 1,
+        "Brazil": 2,
+        "Haiti": 5
+      },
+      "matches": [
+        [
+          "Brazil",
+          "Morocco",
+          0,
+          0,
+          "Brazil/Morocco"
+        ],
+        [
+          "Brazil",
+          "Haiti",
+          1,
+          4,
+          "Haiti"
+        ],
+        [
+          "Brazil",
+          "Scotland",
+          1,
+          0,
+          "Brazil"
+        ],
+        [
+          "Morocco",
+          "Haiti",
+          1,
+          1,
+          "Morocco"
+        ],
+        [
+          "Morocco",
+          "Scotland",
+          0,
+          0,
+          "Morocco/Scotland"
+        ],
+        [
+          "Haiti",
+          "Scotland",
+          0,
+          1,
+          "Scotland"
+        ]
+      ]
+    },
+    "D": {
+      "standings": [
+        "Australia",
+        "USA",
+        "T\u00fcrkiye",
+        "Paraguay"
+      ],
+      "points": {
+        "Australia": 9,
+        "USA": 8,
+        "T\u00fcrkiye": 3,
+        "Paraguay": 3
+      },
+      "gd": {
+        "Australia": 4,
+        "USA": 1,
+        "T\u00fcrkiye": -2,
+        "Paraguay": -3
+      },
+      "gf": {
+        "Australia": 5,
+        "USA": 4,
+        "T\u00fcrkiye": 3,
+        "Paraguay": 1
+      },
+      "matches": [
+        [
+          "USA",
+          "Paraguay",
+          1,
+          0,
+          "USA"
+        ],
+        [
+          "USA",
+          "Australia",
+          1,
+          2,
+          "Australia"
+        ],
+        [
+          "USA",
+          "T\u00fcrkiye",
+          2,
+          1,
+          "T\u00fcrkiye"
+        ],
+        [
+          "Paraguay",
+          "Australia",
+          0,
+          1,
+          "Australia"
+        ],
+        [
+          "Paraguay",
+          "T\u00fcrkiye",
+          1,
+          2,
+          "Paraguay"
+        ],
+        [
+          "Australia",
+          "T\u00fcrkiye",
+          2,
+          0,
+          "Australia"
+        ]
+      ]
+    },
+    "E": {
+      "standings": [
+        "Germany",
+        "Ivory Coast",
+        "Ecuador",
+        "Cura\u00e7ao"
+      ],
+      "points": {
+        "Germany": 7,
+        "Ivory Coast": 6,
+        "Ecuador": 2,
+        "Cura\u00e7ao": 1
+      },
+      "gd": {
+        "Germany": 1,
+        "Ivory Coast": 2,
+        "Ecuador": -2,
+        "Cura\u00e7ao": -1
+      },
+      "gf": {
+        "Germany": 3,
+        "Ivory Coast": 4,
+        "Ecuador": 1,
+        "Cura\u00e7ao": 4
+      },
+      "matches": [
+        [
+          "Germany",
+          "Cura\u00e7ao",
+          2,
+          2,
+          "Germany"
+        ],
+        [
+          "Germany",
+          "Ivory Coast",
+          1,
+          0,
+          "Germany"
+        ],
+        [
+          "Germany",
+          "Ecuador",
+          0,
+          0,
+          "Germany/Ecuador"
+        ],
+        [
+          "Cura\u00e7ao",
+          "Ivory Coast",
+          1,
+          2,
+          "Ivory Coast"
+        ],
+        [
+          "Cura\u00e7ao",
+          "Ecuador",
+          1,
+          1,
+          "Cura\u00e7ao/Ecuador"
+        ],
+        [
+          "Ivory Coast",
+          "Ecuador",
+          2,
+          0,
+          "Ivory Coast"
+        ]
+      ]
+    },
+    "F": {
+      "standings": [
+        "Japan",
+        "Netherlands",
+        "Tunisia",
+        "Sweden"
+      ],
+      "points": {
+        "Japan": 9,
+        "Netherlands": 4,
+        "Tunisia": 2,
+        "Sweden": 1
+      },
+      "gd": {
+        "Japan": 2,
+        "Netherlands": 0,
+        "Tunisia": -2,
+        "Sweden": 0
+      },
+      "gf": {
+        "Japan": 5,
+        "Netherlands": 3,
+        "Tunisia": 2,
+        "Sweden": 3
+      },
+      "matches": [
+        [
+          "Netherlands",
+          "Japan",
+          1,
+          2,
+          "Japan"
+        ],
+        [
+          "Netherlands",
+          "Sweden",
+          1,
+          0,
+          "Netherlands"
+        ],
+        [
+          "Netherlands",
+          "Tunisia",
+          1,
+          1,
+          "Netherlands/Tunisia"
+        ],
+        [
+          "Japan",
+          "Sweden",
+          1,
+          2,
+          "Japan"
+        ],
+        [
+          "Japan",
+          "Tunisia",
+          2,
+          0,
+          "Japan"
+        ],
+        [
+          "Sweden",
+          "Tunisia",
+          1,
+          1,
+          "Sweden/Tunisia"
+        ]
+      ]
+    },
+    "G": {
+      "standings": [
+        "Iran",
+        "Belgium",
+        "Egypt",
+        "New Zealand"
+      ],
+      "points": {
+        "Iran": 7,
+        "Belgium": 6,
+        "Egypt": 2,
+        "New Zealand": 1
+      },
+      "gd": {
+        "Iran": 0,
+        "Belgium": -2,
+        "Egypt": 1,
+        "New Zealand": 1
+      },
+      "gf": {
+        "Iran": 3,
+        "Belgium": 3,
+        "Egypt": 4,
+        "New Zealand": 4
+      },
+      "matches": [
+        [
+          "Belgium",
+          "Egypt",
+          1,
+          2,
+          "Belgium"
+        ],
+        [
+          "Belgium",
+          "Iran",
+          1,
+          1,
+          "Iran"
+        ],
+        [
+          "Belgium",
+          "New Zealand",
+          1,
+          2,
+          "Belgium"
+        ],
+        [
+          "Egypt",
+          "Iran",
+          1,
+          1,
+          "Egypt/Iran"
+        ],
+        [
+          "Egypt",
+          "New Zealand",
+          1,
+          1,
+          "Egypt/New Zealand"
+        ],
+        [
+          "Iran",
+          "New Zealand",
+          1,
+          1,
+          "Iran"
+        ]
+      ]
+    },
+    "H": {
+      "standings": [
+        "Spain",
+        "Saudi Arabia",
+        "Uruguay",
+        "Cabo Verde"
+      ],
+      "points": {
+        "Spain": 6,
+        "Saudi Arabia": 6,
+        "Uruguay": 3,
+        "Cabo Verde": 3
+      },
+      "gd": {
+        "Spain": 2,
+        "Saudi Arabia": -1,
+        "Uruguay": 2,
+        "Cabo Verde": -3
+      },
+      "gf": {
+        "Spain": 4,
+        "Saudi Arabia": 2,
+        "Uruguay": 6,
+        "Cabo Verde": 4
+      },
+      "matches": [
+        [
+          "Spain",
+          "Cabo Verde",
+          1,
+          2,
+          "Cabo Verde"
+        ],
+        [
+          "Spain",
+          "Saudi Arabia",
+          1,
+          0,
+          "Spain"
+        ],
+        [
+          "Spain",
+          "Uruguay",
+          2,
+          0,
+          "Spain"
+        ],
+        [
+          "Cabo Verde",
+          "Saudi Arabia",
+          1,
+          1,
+          "Saudi Arabia"
+        ],
+        [
+          "Cabo Verde",
+          "Uruguay",
+          1,
+          5,
+          "Uruguay"
+        ],
+        [
+          "Saudi Arabia",
+          "Uruguay",
+          1,
+          1,
+          "Saudi Arabia"
+        ]
+      ]
+    },
+    "I": {
+      "standings": [
+        "Norway",
+        "France",
+        "Senegal",
+        "Iraq"
+      ],
+      "points": {
+        "Norway": 6,
+        "France": 4,
+        "Senegal": 4,
+        "Iraq": 3
+      },
+      "gd": {
+        "Norway": 4,
+        "France": 0,
+        "Senegal": -1,
+        "Iraq": -3
+      },
+      "gf": {
+        "Norway": 6,
+        "France": 2,
+        "Senegal": 2,
+        "Iraq": 3
+      },
+      "matches": [
+        [
+          "France",
+          "Senegal",
+          0,
+          0,
+          "France/Senegal"
+        ],
+        [
+          "France",
+          "Iraq",
+          1,
+          2,
+          "Iraq"
+        ],
+        [
+          "France",
+          "Norway",
+          1,
+          0,
+          "France"
+        ],
+        [
+          "Senegal",
+          "Iraq",
+          2,
+          0,
+          "Senegal"
+        ],
+        [
+          "Senegal",
+          "Norway",
+          0,
+          3,
+          "Norway"
+        ],
+        [
+          "Iraq",
+          "Norway",
+          1,
+          3,
+          "Norway"
+        ]
+      ]
+    },
+    "J": {
+      "standings": [
+        "Austria",
+        "Algeria",
+        "Argentina",
+        "Jordan"
+      ],
+      "points": {
+        "Austria": 6,
+        "Algeria": 4,
+        "Argentina": 4,
+        "Jordan": 3
+      },
+      "gd": {
+        "Austria": -1,
+        "Algeria": 2,
+        "Argentina": 0,
+        "Jordan": -1
+      },
+      "gf": {
+        "Austria": 2,
+        "Algeria": 4,
+        "Argentina": 2,
+        "Jordan": 2
+      },
+      "matches": [
+        [
+          "Argentina",
+          "Algeria",
+          1,
+          1,
+          "Argentina/Algeria"
+        ],
+        [
+          "Argentina",
+          "Austria",
+          0,
+          1,
+          "Austria"
+        ],
+        [
+          "Argentina",
+          "Jordan",
+          1,
+          0,
+          "Argentina"
+        ],
+        [
+          "Algeria",
+          "Austria",
+          2,
+          0,
+          "Algeria"
+        ],
+        [
+          "Algeria",
+          "Jordan",
+          1,
+          1,
+          "Jordan"
+        ],
+        [
+          "Austria",
+          "Jordan",
+          1,
+          1,
+          "Austria"
+        ]
+      ]
+    },
+    "K": {
+      "standings": [
+        "Portugal",
+        "Uzbekistan",
+        "Colombia",
+        "Congo"
+      ],
+      "points": {
+        "Portugal": 9,
+        "Uzbekistan": 4,
+        "Colombia": 4,
+        "Congo": 0
+      },
+      "gd": {
+        "Portugal": 3,
+        "Uzbekistan": -1,
+        "Colombia": -1,
+        "Congo": -1
+      },
+      "gf": {
+        "Portugal": 4,
+        "Uzbekistan": 6,
+        "Colombia": 4,
+        "Congo": 3
+      },
+      "matches": [
+        [
+          "Portugal",
+          "Congo",
+          1,
+          0,
+          "Portugal"
+        ],
+        [
+          "Portugal",
+          "Uzbekistan",
+          2,
+          1,
+          "Portugal"
+        ],
+        [
+          "Portugal",
+          "Colombia",
+          1,
+          0,
+          "Portugal"
+        ],
+        [
+          "Congo",
+          "Uzbekistan",
+          2,
+          2,
+          "Uzbekistan"
+        ],
+        [
+          "Congo",
+          "Colombia",
+          1,
+          1,
+          "Colombia"
+        ],
+        [
+          "Uzbekistan",
+          "Colombia",
+          3,
+          3,
+          "Uzbekistan/Colombia"
+        ]
+      ]
+    },
+    "L": {
+      "standings": [
+        "Croatia",
+        "Ghana",
+        "England",
+        "Panama"
+      ],
+      "points": {
+        "Croatia": 6,
+        "Ghana": 6,
+        "England": 3,
+        "Panama": 3
+      },
+      "gd": {
+        "Croatia": 5,
+        "Ghana": 1,
+        "England": 2,
+        "Panama": -8
+      },
+      "gf": {
+        "Croatia": 6,
+        "Ghana": 5,
+        "England": 5,
+        "Panama": 1
+      },
+      "matches": [
+        [
+          "England",
+          "Croatia",
+          1,
+          1,
+          "England"
+        ],
+        [
+          "England",
+          "Ghana",
+          3,
+          1,
+          "Ghana"
+        ],
+        [
+          "England",
+          "Panama",
+          1,
+          1,
+          "Panama"
+        ],
+        [
+          "Croatia",
+          "Ghana",
+          1,
+          0,
+          "Croatia"
+        ],
+        [
+          "Croatia",
+          "Panama",
+          4,
+          0,
+          "Croatia"
+        ],
+        [
+          "Ghana",
+          "Panama",
+          4,
+          0,
+          "Ghana"
+        ]
+      ]
+    }
+  },
+  "monte_carlo_champion_probability_top15": [
+    {
+      "team": "Spain",
+      "prob": 13.0
+    },
+    {
+      "team": "Argentina",
+      "prob": 12.4
+    },
+    {
+      "team": "France",
+      "prob": 6.5
+    },
+    {
+      "team": "Portugal",
+      "prob": 5.8
+    },
+    {
+      "team": "Colombia",
+      "prob": 5.5
+    },
+    {
+      "team": "Morocco",
+      "prob": 5.1
+    },
+    {
+      "team": "Germany",
+      "prob": 5.0
+    },
+    {
+      "team": "Brazil",
+      "prob": 4.9
+    },
+    {
+      "team": "Japan",
+      "prob": 4.8
+    },
+    {
+      "team": "England",
+      "prob": 4.5
+    },
+    {
+      "team": "Croatia",
+      "prob": 4.3
+    },
+    {
+      "team": "Netherlands",
+      "prob": 4.1
+    },
+    {
+      "team": "Mexico",
+      "prob": 3.3
+    },
+    {
+      "team": "Ecuador",
+      "prob": 2.9
+    },
+    {
+      "team": "Iran",
+      "prob": 2.8
+    }
+  ],
+  "model": "Elo-based + Poisson (no RandomForest - corrected from feedback)",
+  "draw_probability": "Win:Draw:Loss properly modeled",
+  "dataset_size": "32,359 matches (1990-2025)"
+}
