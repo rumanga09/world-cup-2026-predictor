@@ -78,7 +78,8 @@ print(f"✅ Saved: {OUTPUT_DIR}/wc2026_bracket.png")
 plt.figure(figsize=(12, 6))
 # Convert elo to win probability using logistic function
 df_32 = df.sort_values('elo_rating', ascending=False).head(32).copy()
-df_32['prob'] = 1 / (1 + np.exp(-(df_32['elo_rating'] - df_32['elo_rating'].mean()) / 100))
+avg_elo = df_32['elo_rating'].mean()
+df_32['prob'] = 1 / (1 + 10 ** ((avg_elo - df_32['elo_rating']) / 400))
 df_32['prob'] = df_32['prob'] / df_32['prob'].sum() * 100  # normalize to %
 
 top10 = df_32.head(10).sort_values('prob', ascending=True)

@@ -76,7 +76,26 @@ def simulate_group(teams, ratings):
 # FIX 5: Load dataset
 # ============================================================
 print("📥 Loading international results...")
-df = pd.read_csv(os.path.expanduser("~/.cache/kagglehub/datasets/martj42/international-football-results-from-1872-to-2017/versions/120/results.csv"))
+_df_loaded = False
+try:
+    import kagglehub as _kh
+    _path = _kh.dataset_download("martj42/international-football-results-from-1872-to-2017")
+    _csv = next(f for f in os.listdir(_path) if f.endswith('.csv'))
+    df = pd.read_csv(os.path.join(_path, _csv))
+    _df_loaded = True
+except Exception:
+    for _root, _, _files in os.walk(os.path.expanduser("~/.cache/kagglehub")):
+        for _f in _files:
+            if _f == 'results.csv':
+                df = pd.read_csv(os.path.join(_root, _f))
+                _df_loaded = True
+                break
+        if _df_loaded:
+            break
+if not _df_loaded:
+    raise FileNotFoundError(
+        "Dataset not found. Run: import kagglehub; kagglehub.dataset_download('martj42/international-football-results-from-1872-to-2017')"
+    )
 df['home'] = df['home_team']; df['away'] = df['away_team']
 df['hg'] = df['home_score']; df['ag'] = df['away_score']
 df['year'] = pd.to_datetime(df['date']).dt.year
@@ -186,15 +205,19 @@ for _ in trange(N_SIMS, desc="Simulating"):
     for i in range(16):  # 32/2 = 16 R32 matches → 16 teams to R16
         h, a = r32_s[i], r32_s[-(i+1)]
         w, _, _ = simulate_match(h, a, ratings)
-        curr.append(h if w in (h, 'draw') else a)
-    
+        if w == 'draw':
+            w = h if np.random.random() < 0.5 else a  # penalty shootout
+        curr.append(w)
+
     # R16 → QF → SF → F (fixed bracket, no reseeding)
     while len(curr) > 1:
         nxt = []
         for i in range(0, len(curr), 2):
             if i+1 < len(curr):
                 w, _, _ = simulate_match(curr[i], curr[i+1], ratings)
-                nxt.append(curr[i] if w in (curr[i], 'draw') else curr[i+1])
+                if w == 'draw':
+                    w = curr[i] if np.random.random() < 0.5 else curr[i+1]  # penalty shootout
+                nxt.append(w)
         curr = nxt
     champ_counts[curr[0]] = champ_counts.get(curr[0], 0) + 1
 

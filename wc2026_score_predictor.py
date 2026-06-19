@@ -30,7 +30,7 @@ ratings = {
     # Group I
     'France': 1148.8, 'Senegal': 1000.0, 'Iraq': 940.0, 'Norway': 980.0,
     # Group J
-    'Argentina': 980.0, 'Algeria': 1000.0, 'Austria': 970.0, 'Jordan': 930.0,
+    'Argentina': 1140.0, 'Algeria': 1000.0, 'Austria': 970.0, 'Jordan': 930.0,
     # Group K
     'Portugal': 1000.0, 'DR Congo': 940.0, 'Uzbekistan': 930.0, 'Colombia': 980.0,
     # Group L

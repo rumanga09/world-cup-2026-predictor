@@ -78,6 +78,7 @@ print(f"\n=== 48 TEAMS ({len(official_groups)} GROUPS) ===")
 # ============================================================
 # Build ratings from match_df
 ratings = {t: 1000 for t in all_teams_48}
+elo_errors = 0
 for _, r in match_df.iterrows():
     try:
         h = r.get('home_team', r.get('Home Team', r.get('home')))
@@ -94,8 +95,10 @@ for _, r in match_df.iterrows():
         sh, sa = (1, 0) if hg > ag else (0, 1) if ag > hg else (0.5, 0.5)
         ratings[h] = ratings.get(h, 950) + 32 * (sh - exp_h)
         ratings[a] = ratings.get(a, 950) + 32 * (sa - exp_a)
-    except:
-        pass
+    except Exception:
+        elo_errors += 1
+if elo_errors > 0:
+    print(f"  ⚠️ {elo_errors} rows skipped during Elo training")
 
 # Print ratings
 ratings_list = sorted([(t, round(ratings[t], 1)) for t in all_teams_48], key=lambda x: x[1], reverse=True)
@@ -124,9 +127,15 @@ def simulate_group(teams, sim_id=0):
             rh, ra = ratings.get(h, 950), ratings.get(a, 950)
             diff = rh - ra
             prob_h = max(0.1, min(0.9, 0.5 + diff/800))
-            if np.random.random() < prob_h:
+            draw_rate = max(0.10, 0.28 - abs(diff) / 2000)
+            r = np.random.random()
+            if r < prob_h * (1 - draw_rate):
                 points[h] += 3
                 hg, ag = max(1, np.random.poisson(1.5)), max(0, np.random.poisson(1.0))
+            elif r < prob_h * (1 - draw_rate) + draw_rate:
+                s = max(0, np.random.poisson(1.1))
+                hg, ag = s, s
+                points[h] += 1; points[a] += 1
             else:
                 points[a] += 3
                 hg, ag = max(0, np.random.poisson(1.0)), max(1, np.random.poisson(1.5))
@@ -216,9 +225,9 @@ for _ in trange(N_SIMS):
     sw, sr, st3 = {}, {}, []
     for gn in sorted(official_groups.keys()):
         teams = official_groups[gn]
-        st, _, _, _ = simulate_group(teams)
+        st, pts_s, gd_s, gf_s = simulate_group(teams)
         sw[gn], sr[gn] = st[0], st[1]
-        st3.append((gn, st[2], 0, 0, 0))
+        st3.append((gn, st[2], pts_s[st[2]], gd_s[st[2]], gf_s[st[2]]))
     st3.sort(key=lambda x: (x[2], x[3], x[4]), reverse=True)
     qt = [st3[i][1] for i in range(min(8, len(st3)))]
     
