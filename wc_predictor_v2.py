@@ -56,7 +56,7 @@ matches = [
     (2014,'Germany','Brazil',7,1,'semi'), (2014,'Brazil','Colombia',2,1,'quarter'),
     (2014,'Germany','France',1,0,'quarter'), (2014,'Netherlands','Mexico',2,1,'round16'),
     (2014,'Brazil','Chile',1,1,'round16'), (2014,'Argentina','Switzerland',1,0,'round16'),
-    (2014,'Germany','Algeria',2,1,'round16'), (2014,'France','Germany',0,1,'quarter'),
+    (2014,'Germany','Algeria',2,1,'round16'),
     (2014,'Belgium','USA',2,1,'round16'), (2014,'Costa Rica','Greece',5,3,'round16'),
     (2014,'Argentina','Belgium',1,0,'quarter'), (2014,'Netherlands','Argentina',0,0,'semi'),
     (2014,'Brazil','Netherlands',0,3,'semi'), (2014,'Colombia','Uruguay',2,0,'round16'),
@@ -103,7 +103,7 @@ matches = [
 ]
 
 df = pd.DataFrame(matches, columns=['year','home','away','hg','ag','stage'])
-df['winner'] = df.apply(lambda r: r['home'] if r['hg'] >= r['ag'] else r['away'], axis=1)
+df['winner'] = df.apply(lambda r: r['home'] if r['hg'] > r['ag'] else (r['away'] if r['ag'] > r['hg'] else 'Draw'), axis=1)
 print(f"✅ Loaded {len(df)} matches ({int(df['year'].min())}-{int(df['year'].max())})")
 
 # ============================================================
@@ -203,13 +203,18 @@ def predict_match(home, away):
     rh = ratings.get(home, 950)
     ra = ratings.get(away, 950)
     diff = rh - ra
-    # Simple model: home "advantage" + elo diff -> win prob
-    prob_home = 0.5 + (diff / 800)
-    prob_home = max(0.1, min(0.9, prob_home))
-    if np.random.random() < prob_home:
-        return home, (np.random.poisson(1.5) + 1, np.random.poisson(1.0))
+    prob_home = max(0.1, min(0.9, 0.5 + diff / 800))
+    draw_rate = max(0.10, 0.28 - abs(diff) / 2000)
+    prob_home_win = prob_home * (1 - draw_rate)
+    prob_away_win = (1 - prob_home) * (1 - draw_rate)
+    r = np.random.random()
+    if r < prob_home_win:
+        return home, (max(1, np.random.poisson(1.5)), max(0, np.random.poisson(1.0)))
+    elif r < prob_home_win + draw_rate:
+        s = max(0, np.random.poisson(1.1))
+        return 'draw', (s, s)
     else:
-        return away, (np.random.poisson(1.0), np.random.poisson(1.5) + 1)
+        return away, (max(0, np.random.poisson(1.0)), max(1, np.random.poisson(1.5)))
 
 def simulate_group(teams):
     points = {t: 0 for t in teams}
@@ -221,8 +226,11 @@ def simulate_group(teams):
             winner, (hg, ag) = predict_match(h, a)
             if winner == h:
                 points[h] += 3
-            else:
+            elif winner == a:
                 points[a] += 3
+            else:
+                points[h] += 1
+                points[a] += 1
             gd[h] += hg - ag
             gd[a] += ag - hg
             gf[h] += hg
@@ -281,12 +289,6 @@ r32_pairs = []
 winners_by_group = {gn: group_winners[gn] for gn in group_names}
 runners_by_group = {gn: group_runners_up[gn] for gn in group_names}
 third_qualifiers = {gn: t for gn, t, _, _, _ in qualifying_third}
-
-# Standard FIFA R32 pairing pattern (simplified):
-pairing_rules = [
-    ('A', 1, ('C', 3, 'D', 3, 'E', 3, 'F', 3)),  # 1A vs 3rd from C/D/E/F
-    ('B', 1, ('A', 3, 'C', 3, 'D', 3, 'E', 3)),
-]
 
 # Simple approach: sort by group position and pair
 winners_sorted = [group_winners[gn] for gn in group_names]
@@ -356,10 +358,6 @@ for i in range(8):
 print("\n--- ROUND OF 16 ---")
 for i, (t1, t2, w) in enumerate(r16_pairs, 1):
     print(f"  ({i}) {t1} vs {t2} -> {w}")
-# Also need to fix Monte Carlo knockout to match the new bracket structure
-print(f"\n--- ROUND OF 16 (byes + R32 winners) ---")
-for i, (t1, t2, w) in enumerate(r16_pairs, 1):
-    print(f"  ({i}) {t1} vs {t2} -> {w}")
 
 # Track these for downstream
 r16_matches = [(t1, t2, w) for t1, t2, w in r16_pairs]
@@ -376,9 +374,6 @@ print(f"\n=== MONTE CARLO SIMULATION ({N_SIMS} runs) ===")
 np.random.seed(42)
 from tqdm import trange
 for _ in trange(N_SIMS, desc="Simulating"):
-    # Re-run group stage with different random seed each iteration
-    sim_seed = np.random.randint(0, 1000000)
-    np.random.seed(sim_seed)
     sim_winners = {}
     sim_runners = {}
     sim_third = []
@@ -419,9 +414,8 @@ print(f"\n  Other teams combined: {100 - sum(list(champ_probs.values())[:10]):.1
 # 8. SAVE RESULTS
 # ============================================================
 results = {
-    'model': 'RandomForest + Elo',
+    'model': 'Elo linear model',
     'matches_trained': len(df),
-    'cv_accuracy': '80.0%',
     'teams': 48,
     'groups': {gn: {'teams': group_seeds[gn], 'standings': group_results[gn]['teams']} for gn in group_names},
     'r32_matches': [(t1, t2, w) for t1, t2, w in r32_matches],

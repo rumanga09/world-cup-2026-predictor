@@ -39,7 +39,10 @@ ax.axis('off')
 table_data = []
 for gn in group_names:
     g = groups[gn]
-    row = [f'Grup {gn}'] + g['standings'] + [f"1st: {g['standings'][0]}\n2nd: {g['standings'][1]}"]
+    standings = g['standings']
+    padded = standings + [''] * max(0, 4 - len(standings))
+    note = f"1st: {standings[0]}\n2nd: {standings[1]}" if len(standings) >= 2 else ''
+    row = [f'Grup {gn}'] + padded[:4] + [note]
     table_data.append(row)
 
 col_labels = ['Group', '1st Place', '2nd Place', '3rd Place', '4th Place', 'Note']

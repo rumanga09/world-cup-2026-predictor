@@ -52,7 +52,7 @@ matches = [
     (2014,'Germany','Brazil',7,1,'semi'), (2014,'Brazil','Colombia',2,1,'quarter'),
     (2014,'Germany','France',1,0,'quarter'), (2014,'Netherlands','Mexico',2,1,'round16'),
     (2014,'Brazil','Chile',1,1,'round16'), (2014,'Argentina','Switzerland',1,0,'round16'),
-    (2014,'Germany','Algeria',2,1,'round16'), (2014,'France','Germany',0,1,'quarter'),
+    (2014,'Germany','Algeria',2,1,'round16'),
     (2014,'Belgium','USA',2,1,'round16'), (2014,'Costa Rica','Greece',5,3,'round16'),
     (2014,'Argentina','Belgium',1,0,'quarter'), (2014,'Netherlands','Argentina',0,0,'semi'),
     (2014,'Brazil','Netherlands',0,3,'semi'), (2014,'Colombia','Uruguay',2,0,'round16'),
@@ -92,7 +92,7 @@ matches = [
 ]
 
 df = pd.DataFrame(matches, columns=['year','home','away','hg','ag','stage'])
-df['winner'] = df.apply(lambda r: r['home'] if r['hg'] >= r['ag'] else r['away'], axis=1)
+df['winner'] = df.apply(lambda r: r['home'] if r['hg'] > r['ag'] else (r['away'] if r['ag'] > r['hg'] else 'Draw'), axis=1)
 print(f"✅ {len(df)} matches loaded")
 
 # ============================================================
@@ -194,9 +194,15 @@ def simulate_group(teams):
             rh, ra = ratings.get(h, 950), ratings.get(a, 950)
             diff = rh - ra
             prob_h = max(0.1, min(0.9, 0.5 + diff/800))
-            if np.random.random() < prob_h:
+            draw_rate = max(0.10, 0.28 - abs(diff) / 2000)
+            r = np.random.random()
+            if r < prob_h * (1 - draw_rate):
                 points[h] += 3
                 hg, ag = max(1, np.random.poisson(1.5)), max(0, np.random.poisson(1.0))
+            elif r < prob_h * (1 - draw_rate) + draw_rate:
+                s = max(0, np.random.poisson(1.1))
+                hg, ag = s, s
+                points[h] += 1; points[a] += 1
             else:
                 points[a] += 3
                 hg, ag = max(0, np.random.poisson(1.0)), max(1, np.random.poisson(1.5))
@@ -312,7 +318,6 @@ qf_counts = {}
 print(f"\n  Monte Carlo: {N_SIMS} simulations...")
 from tqdm import trange
 for _ in trange(N_SIMS, desc="Simulating"):
-    sim_seed = np.random.randint(0, 1000000)
     # group stage
     sim_w = {}; sim_r = {}; sim_t3 = []
     for gn in sorted(resolved_groups.keys()):
@@ -350,13 +355,14 @@ for _ in trange(N_SIMS, desc="Simulating"):
         curr = nxt
     
     c = curr[0]
-    champ_counts[c] = champ_counts.get(c, 0) + 1 / N_SIMS * 100
+    champ_counts[c] = champ_counts.get(c, 0) + 1
 
 print(f"\n{'='*50}")
 print(f"  MONTE CARLO TOP 15")
 print(f"{'='*50}")
 champ_sorted = sorted(champ_counts.items(), key=lambda x: x[1], reverse=True)
-for i, (t, p) in enumerate(champ_sorted[:15], 1):
+for i, (t, c) in enumerate(champ_sorted[:15], 1):
+    p = c / N_SIMS * 100
     bar = "█" * int(p/2) + "░" * max(0, 50 - int(p/2))
     print(f"  {i:>2}. {t:<25} {p:5.1f}%")
 print(f"\n  ⚠️  Note: Low counts reflect small simulation size (1,000). Higher N = smoother probabilities.")
@@ -374,10 +380,9 @@ out = {
     'sf_matches': [(a, b, w) for a, b, w in sf_matches],
     'final': (t1, t2, champion),
     'champion_single_run': champion,
-    'championship_probability_mc1000': champ_sorted[:20],
+    'championship_probability_mc1000': [(t, round(c/N_SIMS*100, 1)) for t, c in champ_sorted[:20]],
 }
 
-import json
 os.makedirs('predictions', exist_ok=True)
 with open('predictions/wc2026_official_draw_results.json', 'w') as f:
     json.dump(out, f, indent=2, default=str)

@@ -291,15 +291,9 @@ def predict_score(home, away):
     draw_prob = draw_base * (1 - elo_diff / 800)
     draw_prob = max(0.08, min(0.35, draw_prob))
     
-    # Adjust win/loss probabilities
+    # Adjust win/loss probabilities (sum to 1 by construction)
     home_win_prob = elo_win * (1 - draw_prob)
     away_win_prob = (1 - elo_win) * (1 - draw_prob)
-    
-    # Total must = 1
-    total = home_win_prob + draw_prob + away_win_prob
-    home_win_prob /= total
-    draw_prob /= total
-    away_win_prob /= total
     
     # Poisson-based score prediction
     # Expected goals proportional to Elo ratio
@@ -313,18 +307,20 @@ def predict_score(home, away):
     return hg, ag, home_win_prob, draw_prob, away_win_prob
 
 def match_outcome(home, away):
-    """Return deterministic outcome for simulation"""
+    """Return stochastic outcome using three-way Elo probability"""
     rh = ratings.get(home, 1500)
     ra = ratings.get(away, 1500)
     elo_win = 1 / (1 + 10 ** ((ra - rh) / 400))
-    
+    elo_diff = abs(rh - ra)
+    draw_prob = max(0.08, min(0.35, 0.25 * (1 - elo_diff / 800)))
+    home_win_prob = elo_win * (1 - draw_prob)
     r = np.random.random()
-    if r < elo_win * 0.7:  # home win
+    if r < home_win_prob:
         return home, (max(1, int(np.random.poisson(1.5))), max(0, int(np.random.poisson(0.8))))
-    elif r < elo_win * 0.7 + 0.25:  # draw
+    elif r < home_win_prob + draw_prob:
         s = max(0, int(np.random.poisson(1.2)))
         return f"{home}/{away}", (s, s)
-    else:  # away win
+    else:
         return away, (max(0, int(np.random.poisson(0.8))), max(1, int(np.random.poisson(1.5))))
 
 def simulate_group(teams, known_matches=None):
@@ -348,8 +344,6 @@ def simulate_group(teams, known_matches=None):
                     if hg > ag: winner = h
                     elif hg == ag: winner = f"{h}/{a}"
                     else: winner = a
-                    points[h if hg > ag else a if ag > hg else None] = 1 if hg == ag else 3
-                    if hg > ag: points[h] += 2
                     resolved = True
                     break
             if not resolved:
@@ -460,7 +454,6 @@ for gn in sorted(group_order.keys()):
             hg, ag, hwp, dp, awp = predict_score(resolve(h), resolve(a))
         
         # Format display
-        emoji_h = '🇲🇽🇿🇦🇰🇷🇨🇿🇨🇦🇧🇦🇶🇦🇨🇭🇧🇷🇲🇦🇭🇹🇸🇨🇺🇸🇵🇾🇦🇺🇹🇷🇩🇪🇨🇼🇨🇮🇪🇨🇳🇱🇯🇵🇸🇪🇹🇳🇧🇪🇪🇬🇮🇷🇳🇿🇪🇸🇨🇻🇸🇦🇺🇾🇫🇷🇸🇳🇮🇶🇳🇴🇦🇷🇩🇿🇦🇹🇯🇴🇵🇹🇨🇩🇺🇿🇨🇴🏴󠁧󠁢󠁥󠁮󠁧󠁿🇭🇷🇬🇭🇵🇦'.split('🇾')
         flag_map = {
             'Mexico':'🇲🇽','South Africa':'🇿🇦','Korea Republic':'🇰🇷','Czechia':'🇨🇿',
             'Canada':'🇨🇦','Bosnia and Herzegovina':'🇧🇦','Qatar':'🇶🇦','Switzerland':'🇨🇭',

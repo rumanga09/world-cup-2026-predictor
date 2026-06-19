@@ -37,7 +37,7 @@ matches = [
     (2014,'Germany','Brazil',7,1,'semi'), (2014,'Brazil','Colombia',2,1,'quarter'),
     (2014,'Germany','France',1,0,'quarter'), (2014,'Netherlands','Mexico',2,1,'round16'),
     (2014,'Brazil','Chile',1,1,'round16'), (2014,'Argentina','Switzerland',1,0,'round16'),
-    (2014,'Germany','Algeria',2,1,'round16'), (2014,'France','Germany',0,1,'quarter'),
+    (2014,'Germany','Algeria',2,1,'round16'),
     # 2010 SOUTH AFRICA
     (2010,'Spain','Netherlands',1,0,'final'), (2010,'Germany','Spain',0,1,'semi'),
     (2010,'Netherlands','Uruguay',2,3,'semi'), (2010,'Spain','Paraguay',1,0,'quarter'),
@@ -61,7 +61,7 @@ matches = [
 ]
 
 df = pd.DataFrame(matches, columns=['year','home','away','hg','ag','stage'])
-df['winner'] = df.apply(lambda r: r['home'] if r['hg'] >= r['ag'] else r['away'], axis=1)
+df['winner'] = df.apply(lambda r: r['home'] if r['hg'] > r['ag'] else (r['away'] if r['ag'] > r['hg'] else 'Draw'), axis=1)
 print(f"Loaded {len(df)} matches ({int(df['year'].min())}-{int(df['year'].max())})")
 
 # 2. ELO RATINGS
@@ -103,11 +103,11 @@ print(ratings_df.head(10).to_string(index=False))
 def features(home, away):
     return [
         ratings.get(home, 1000), ratings.get(away, 1000),
-        ratings.get(home, 1000) - ratings.get(away, 1000),
     ]
 
 X = np.array([features(r.home, r.away) for _, r in df.iterrows()])
-y = (df['home'] == df['winner']).astype(int)
+# Draws are treated as not-home-win (label 0)
+y = (df['winner'] == df['home']).astype(int)
 
 clf = RandomForestClassifier(n_estimators=300, max_depth=10, random_state=42, n_jobs=-1)
 scores = cross_val_score(clf, X, y, cv=5)
@@ -129,6 +129,7 @@ def next_round(teams):
 # take top 32 by rating, deduplicated
 unique_teams = list(dict.fromkeys([t for t in ratings_df['team'].tolist() if t in wc_teams] + wc_teams))
 wc32 = unique_teams[:32]
+assert len(wc32) == 32, f"Expected 32 WC teams, got {len(wc32)}"
 print(f"\n=== 2026 WC SIMULATION ({len(wc32)} teams) ===")
 
 r32_matches = next_round(wc32)
