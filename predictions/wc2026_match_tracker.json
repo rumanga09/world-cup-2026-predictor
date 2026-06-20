@@ -1,0 +1,1379 @@
+{
+  "generated": "2026-06-20",
+  "model": "Elo-Poisson v6 + piterfm dataset",
+  "champion": "Switzerland",
+  "group_standings": {
+    "A": [
+      "Mexico",
+      "Korea Republic",
+      "South Africa",
+      "Czechia"
+    ],
+    "B": [
+      "Switzerland",
+      "Italy",
+      "Canada",
+      "Qatar"
+    ],
+    "C": [
+      "Morocco",
+      "Brazil",
+      "Scotland",
+      "Haiti"
+    ],
+    "D": [
+      "USA",
+      "Turkey",
+      "Paraguay",
+      "Australia"
+    ],
+    "E": [
+      "Germany",
+      "Ecuador",
+      "Cura\u00e7ao",
+      "C\u00f4te d'Ivoire"
+    ],
+    "F": [
+      "Netherlands",
+      "Tunisia",
+      "Sweden",
+      "Japan"
+    ],
+    "G": [
+      "Belgium",
+      "Iran",
+      "Egypt",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Uruguay",
+      "Cabo Verde",
+      "Saudi Arabia"
+    ],
+    "I": [
+      "France",
+      "Norway",
+      "Iraq",
+      "Senegal"
+    ],
+    "J": [
+      "Argentina",
+      "Austria",
+      "Jordan",
+      "Algeria"
+    ],
+    "K": [
+      "Portugal",
+      "Colombia",
+      "DR Congo",
+      "Uzbekistan"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "third_qualifiers": [
+    "DR Congo",
+    "Ghana",
+    "Canada",
+    "Sweden",
+    "Scotland",
+    "Cabo Verde",
+    "Egypt",
+    "Paraguay"
+  ],
+  "group_stage": [
+    {
+      "group": "A",
+      "matchday": "MD1",
+      "date": "Jun 11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "venue": "Estadio Azteca, Mexico City",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "A",
+      "matchday": "MD1",
+      "date": "Jun 11",
+      "home": "Korea Republic",
+      "away": "Czechia",
+      "venue": "Estadio Akron, Zapopan",
+      "predicted": {
+        "home": 3,
+        "away": 2
+      },
+      "actual": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "group": "A",
+      "matchday": "MD2",
+      "date": "Jun 18",
+      "home": "Czechia",
+      "away": "South Africa",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "group": "A",
+      "matchday": "MD2",
+      "date": "Jun 18",
+      "home": "Mexico",
+      "away": "Korea Republic",
+      "venue": "Estadio Akron, Zapopan",
+      "predicted": {
+        "home": 0,
+        "away": 3
+      },
+      "actual": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "group": "A",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "Czechia",
+      "away": "Mexico",
+      "venue": "Estadio Azteca, Mexico City",
+      "predicted": {
+        "home": 3,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "A",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "South Africa",
+      "away": "Korea Republic",
+      "venue": "Estadio BBVA, Guadalupe",
+      "predicted": {
+        "home": 2,
+        "away": 4
+      },
+      "actual": null
+    },
+    {
+      "group": "B",
+      "matchday": "MD1",
+      "date": "Jun 12",
+      "home": "Canada",
+      "away": "Italy",
+      "venue": "BMO Field, Toronto",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": {
+        "home": 1,
+        "away": 3
+      }
+    },
+    {
+      "group": "B",
+      "matchday": "MD1",
+      "date": "Jun 13",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "venue": "Levi's Stadium, Santa Clara",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 0,
+        "away": 3
+      }
+    },
+    {
+      "group": "B",
+      "matchday": "MD2",
+      "date": "Jun 18",
+      "home": "Switzerland",
+      "away": "Italy",
+      "venue": "SoFi Stadium, Inglewood",
+      "predicted": {
+        "home": 3,
+        "away": 1
+      },
+      "actual": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "group": "B",
+      "matchday": "MD2",
+      "date": "Jun 18",
+      "home": "Canada",
+      "away": "Qatar",
+      "venue": "BC Place, Vancouver",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "B",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "Switzerland",
+      "away": "Canada",
+      "venue": "BC Place, Vancouver",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "B",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "Italy",
+      "away": "Qatar",
+      "venue": "Lumen Field, Seattle",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "C",
+      "matchday": "MD1",
+      "date": "Jun 13",
+      "home": "Brazil",
+      "away": "Morocco",
+      "venue": "MetLife Stadium, East Rutherford",
+      "predicted": {
+        "home": 0,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "group": "C",
+      "matchday": "MD1",
+      "date": "Jun 13",
+      "home": "Haiti",
+      "away": "Scotland",
+      "venue": "Gillette Stadium, Foxborough",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "group": "C",
+      "matchday": "MD2",
+      "date": "Jun 19",
+      "home": "Scotland",
+      "away": "Morocco",
+      "venue": "Gillette Stadium, Foxborough",
+      "predicted": {
+        "home": 3,
+        "away": 1
+      },
+      "actual": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "group": "C",
+      "matchday": "MD2",
+      "date": "Jun 19",
+      "home": "Brazil",
+      "away": "Haiti",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "predicted": {
+        "home": 0,
+        "away": 2
+      },
+      "actual": {
+        "home": 4,
+        "away": 0
+      }
+    },
+    {
+      "group": "C",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "Scotland",
+      "away": "Brazil",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "predicted": {
+        "home": 0,
+        "away": 5
+      },
+      "actual": null
+    },
+    {
+      "group": "C",
+      "matchday": "MD3",
+      "date": "Jun 24",
+      "home": "Morocco",
+      "away": "Haiti",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "D",
+      "matchday": "MD1",
+      "date": "Jun 12",
+      "home": "USA",
+      "away": "Paraguay",
+      "venue": "SoFi Stadium, Inglewood",
+      "predicted": {
+        "home": 0,
+        "away": 2
+      },
+      "actual": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "group": "D",
+      "matchday": "MD1",
+      "date": "Jun 13",
+      "home": "Australia",
+      "away": "Turkey",
+      "venue": "BC Place, Vancouver",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "group": "D",
+      "matchday": "MD2",
+      "date": "Jun 19",
+      "home": "USA",
+      "away": "Australia",
+      "venue": "Lumen Field, Seattle",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "D",
+      "matchday": "MD2",
+      "date": "Jun 19",
+      "home": "Turkey",
+      "away": "Paraguay",
+      "venue": "Levi's Stadium, Santa Clara",
+      "predicted": {
+        "home": 4,
+        "away": 1
+      },
+      "actual": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "group": "D",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Turkey",
+      "away": "USA",
+      "venue": "SoFi Stadium, Inglewood",
+      "predicted": {
+        "home": 0,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "D",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Paraguay",
+      "away": "Australia",
+      "venue": "Levi's Stadium, Santa Clara",
+      "predicted": {
+        "home": 0,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "E",
+      "matchday": "MD1",
+      "date": "Jun 14",
+      "home": "Germany",
+      "away": "Cura\u00e7ao",
+      "venue": "NRG Stadium, Houston",
+      "predicted": {
+        "home": 0,
+        "away": 0
+      },
+      "actual": {
+        "home": 4,
+        "away": 0
+      }
+    },
+    {
+      "group": "E",
+      "matchday": "MD1",
+      "date": "Jun 14",
+      "home": "C\u00f4te d'Ivoire",
+      "away": "Ecuador",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "predicted": {
+        "home": 0,
+        "away": 4
+      },
+      "actual": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "group": "E",
+      "matchday": "MD2",
+      "date": "Jun 20",
+      "home": "Germany",
+      "away": "C\u00f4te d'Ivoire",
+      "venue": "BMO Field, Toronto",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "E",
+      "matchday": "MD2",
+      "date": "Jun 20",
+      "home": "Ecuador",
+      "away": "Cura\u00e7ao",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "E",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Cura\u00e7ao",
+      "away": "C\u00f4te d'Ivoire",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "E",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Ecuador",
+      "away": "Germany",
+      "venue": "MetLife Stadium, East Rutherford",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "F",
+      "matchday": "MD1",
+      "date": "Jun 14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "venue": "AT&T Stadium, Arlington",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 3,
+        "away": 1
+      }
+    },
+    {
+      "group": "F",
+      "matchday": "MD1",
+      "date": "Jun 14",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "venue": "Estadio BBVA, Guadalupe",
+      "predicted": {
+        "home": 1,
+        "away": 3
+      },
+      "actual": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "group": "F",
+      "matchday": "MD2",
+      "date": "Jun 20",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "venue": "NRG Stadium, Houston",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "F",
+      "matchday": "MD2",
+      "date": "Jun 20",
+      "home": "Tunisia",
+      "away": "Japan",
+      "venue": "Estadio BBVA, Guadalupe",
+      "predicted": {
+        "home": 0,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "F",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Japan",
+      "away": "Sweden",
+      "venue": "AT&T Stadium, Arlington",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "F",
+      "matchday": "MD3",
+      "date": "Jun 25",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "G",
+      "matchday": "MD1",
+      "date": "Jun 15",
+      "home": "Belgium",
+      "away": "Egypt",
+      "venue": "Lumen Field, Seattle",
+      "predicted": {
+        "home": 3,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "group": "G",
+      "matchday": "MD1",
+      "date": "Jun 15",
+      "home": "Iran",
+      "away": "New Zealand",
+      "venue": "SoFi Stadium, Inglewood",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "G",
+      "matchday": "MD2",
+      "date": "Jun 21",
+      "home": "Belgium",
+      "away": "Iran",
+      "venue": "SoFi Stadium, Inglewood",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "G",
+      "matchday": "MD2",
+      "date": "Jun 21",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "venue": "BC Place, Vancouver",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "G",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "Egypt",
+      "away": "Iran",
+      "venue": "Lumen Field, Seattle",
+      "predicted": {
+        "home": 2,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "G",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "venue": "BC Place, Vancouver",
+      "predicted": {
+        "home": 1,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "H",
+      "matchday": "MD1",
+      "date": "Jun 15",
+      "home": "Spain",
+      "away": "Cabo Verde",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": {
+        "home": 5,
+        "away": 0
+      }
+    },
+    {
+      "group": "H",
+      "matchday": "MD1",
+      "date": "Jun 15",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "predicted": {
+        "home": 0,
+        "away": 0
+      },
+      "actual": {
+        "home": 0,
+        "away": 3
+      }
+    },
+    {
+      "group": "H",
+      "matchday": "MD2",
+      "date": "Jun 21",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "H",
+      "matchday": "MD2",
+      "date": "Jun 21",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "H",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "Cabo Verde",
+      "away": "Saudi Arabia",
+      "venue": "NRG Stadium, Houston",
+      "predicted": {
+        "home": 1,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "H",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "Uruguay",
+      "away": "Spain",
+      "venue": "Estadio Akron, Zapopan",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "I",
+      "matchday": "MD1",
+      "date": "Jun 16",
+      "home": "France",
+      "away": "Senegal",
+      "venue": "MetLife Stadium, East Rutherford",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "group": "I",
+      "matchday": "MD1",
+      "date": "Jun 16",
+      "home": "Iraq",
+      "away": "Norway",
+      "venue": "Gillette Stadium, Foxborough",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "group": "I",
+      "matchday": "MD2",
+      "date": "Jun 22",
+      "home": "France",
+      "away": "Iraq",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "I",
+      "matchday": "MD2",
+      "date": "Jun 22",
+      "home": "Norway",
+      "away": "Senegal",
+      "venue": "MetLife Stadium, East Rutherford",
+      "predicted": {
+        "home": 0,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "I",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "Norway",
+      "away": "France",
+      "venue": "Gillette Stadium, Foxborough",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "I",
+      "matchday": "MD3",
+      "date": "Jun 26",
+      "home": "Senegal",
+      "away": "Iraq",
+      "venue": "BMO Field, Toronto",
+      "predicted": {
+        "home": 3,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "J",
+      "matchday": "MD1",
+      "date": "Jun 16",
+      "home": "Argentina",
+      "away": "Algeria",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "J",
+      "matchday": "MD1",
+      "date": "Jun 16",
+      "home": "Austria",
+      "away": "Jordan",
+      "venue": "Levi's Stadium, Santa Clara",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "J",
+      "matchday": "MD2",
+      "date": "Jun 22",
+      "home": "Argentina",
+      "away": "Austria",
+      "venue": "AT&T Stadium, Arlington",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "J",
+      "matchday": "MD2",
+      "date": "Jun 22",
+      "home": "Jordan",
+      "away": "Algeria",
+      "venue": "Levi's Stadium, Santa Clara",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "J",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "Algeria",
+      "away": "Austria",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "predicted": {
+        "home": 2,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "J",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "Jordan",
+      "away": "Argentina",
+      "venue": "AT&T Stadium, Arlington",
+      "predicted": {
+        "home": 1,
+        "away": 3
+      },
+      "actual": null
+    },
+    {
+      "group": "K",
+      "matchday": "MD1",
+      "date": "Jun 17",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "venue": "NRG Stadium, Houston",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "group": "K",
+      "matchday": "MD1",
+      "date": "Jun 17",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "venue": "Estadio Azteca, Mexico City",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "group": "K",
+      "matchday": "MD2",
+      "date": "Jun 23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "venue": "NRG Stadium, Houston",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "K",
+      "matchday": "MD2",
+      "date": "Jun 23",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "venue": "Estadio Akron, Zapopan",
+      "predicted": {
+        "home": 0,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "K",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "Colombia",
+      "away": "Portugal",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "K",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "predicted": {
+        "home": 1,
+        "away": 1
+      },
+      "actual": null
+    },
+    {
+      "group": "L",
+      "matchday": "MD1",
+      "date": "Jun 17",
+      "home": "England",
+      "away": "Croatia",
+      "venue": "AT&T Stadium, Arlington",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "group": "L",
+      "matchday": "MD1",
+      "date": "Jun 17",
+      "home": "Ghana",
+      "away": "Panama",
+      "venue": "BMO Field, Toronto",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": {
+        "home": 3,
+        "away": 1
+      }
+    },
+    {
+      "group": "L",
+      "matchday": "MD2",
+      "date": "Jun 23",
+      "home": "England",
+      "away": "Ghana",
+      "venue": "Gillette Stadium, Foxborough",
+      "predicted": {
+        "home": 1,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "L",
+      "matchday": "MD2",
+      "date": "Jun 23",
+      "home": "Panama",
+      "away": "Croatia",
+      "venue": "BMO Field, Toronto",
+      "predicted": {
+        "home": 1,
+        "away": 2
+      },
+      "actual": null
+    },
+    {
+      "group": "L",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "Panama",
+      "away": "England",
+      "venue": "MetLife Stadium, East Rutherford",
+      "predicted": {
+        "home": 0,
+        "away": 0
+      },
+      "actual": null
+    },
+    {
+      "group": "L",
+      "matchday": "MD3",
+      "date": "Jun 27",
+      "home": "Croatia",
+      "away": "Ghana",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "predicted": {
+        "home": 2,
+        "away": 1
+      },
+      "actual": null
+    }
+  ],
+  "r32": [
+    {
+      "home": "France",
+      "away": "Paraguay",
+      "pred_hg": 3,
+      "pred_ag": 3,
+      "winner": "France",
+      "pens": true
+    },
+    {
+      "home": "Brazil",
+      "away": "Cabo Verde",
+      "pred_hg": 4,
+      "pred_ag": 1,
+      "winner": "Brazil",
+      "pens": false
+    },
+    {
+      "home": "Argentina",
+      "away": "Scotland",
+      "pred_hg": 2,
+      "pred_ag": 2,
+      "winner": "Scotland",
+      "pens": true
+    },
+    {
+      "home": "Spain",
+      "away": "Sweden",
+      "pred_hg": 1,
+      "pred_ag": 1,
+      "winner": "Spain",
+      "pens": true
+    },
+    {
+      "home": "England",
+      "away": "Canada",
+      "pred_hg": 3,
+      "pred_ag": 0,
+      "winner": "England",
+      "pens": false
+    },
+    {
+      "home": "Netherlands",
+      "away": "DR Congo",
+      "pred_hg": 1,
+      "pred_ag": 1,
+      "winner": "DR Congo",
+      "pens": true
+    },
+    {
+      "home": "Portugal",
+      "away": "Turkey",
+      "pred_hg": 2,
+      "pred_ag": 2,
+      "winner": "Portugal",
+      "pens": true
+    },
+    {
+      "home": "Germany",
+      "away": "Tunisia",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Germany",
+      "pens": true
+    },
+    {
+      "home": "Belgium",
+      "away": "Ghana",
+      "pred_hg": 4,
+      "pred_ag": 1,
+      "winner": "Belgium",
+      "pens": false
+    },
+    {
+      "home": "Croatia",
+      "away": "Norway",
+      "pred_hg": 2,
+      "pred_ag": 2,
+      "winner": "Norway",
+      "pens": true
+    },
+    {
+      "home": "Italy",
+      "away": "Egypt",
+      "pred_hg": 1,
+      "pred_ag": 0,
+      "winner": "Italy",
+      "pens": false
+    },
+    {
+      "home": "Uruguay",
+      "away": "Ecuador",
+      "pred_hg": 2,
+      "pred_ag": 0,
+      "winner": "Uruguay",
+      "pens": false
+    },
+    {
+      "home": "Morocco",
+      "away": "Iran",
+      "pred_hg": 1,
+      "pred_ag": 1,
+      "winner": "Iran",
+      "pens": true
+    },
+    {
+      "home": "Korea Republic",
+      "away": "Austria",
+      "pred_hg": 1,
+      "pred_ag": 0,
+      "winner": "Korea Republic",
+      "pens": false
+    },
+    {
+      "home": "Mexico",
+      "away": "Colombia",
+      "pred_hg": 2,
+      "pred_ag": 1,
+      "winner": "Mexico",
+      "pens": false
+    },
+    {
+      "home": "USA",
+      "away": "Switzerland",
+      "pred_hg": 0,
+      "pred_ag": 1,
+      "winner": "Switzerland",
+      "pens": false
+    }
+  ],
+  "r16": [
+    {
+      "home": "France",
+      "away": "Brazil",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "France",
+      "pens": true
+    },
+    {
+      "home": "Scotland",
+      "away": "Spain",
+      "pred_hg": 3,
+      "pred_ag": 3,
+      "winner": "Spain",
+      "pens": true
+    },
+    {
+      "home": "England",
+      "away": "DR Congo",
+      "pred_hg": 2,
+      "pred_ag": 0,
+      "winner": "England",
+      "pens": false
+    },
+    {
+      "home": "Portugal",
+      "away": "Germany",
+      "pred_hg": 1,
+      "pred_ag": 1,
+      "winner": "Portugal",
+      "pens": true
+    },
+    {
+      "home": "Belgium",
+      "away": "Norway",
+      "pred_hg": 2,
+      "pred_ag": 3,
+      "winner": "Norway",
+      "pens": false
+    },
+    {
+      "home": "Italy",
+      "away": "Uruguay",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Italy",
+      "pens": true
+    },
+    {
+      "home": "Iran",
+      "away": "Korea Republic",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Iran",
+      "pens": true
+    },
+    {
+      "home": "Mexico",
+      "away": "Switzerland",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Switzerland",
+      "pens": true
+    }
+  ],
+  "qf": [
+    {
+      "home": "France",
+      "away": "Spain",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Spain",
+      "pens": true
+    },
+    {
+      "home": "England",
+      "away": "Portugal",
+      "pred_hg": 3,
+      "pred_ag": 1,
+      "winner": "England",
+      "pens": false
+    },
+    {
+      "home": "Norway",
+      "away": "Italy",
+      "pred_hg": 1,
+      "pred_ag": 1,
+      "winner": "Italy",
+      "pens": true
+    },
+    {
+      "home": "Iran",
+      "away": "Switzerland",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Switzerland",
+      "pens": true
+    }
+  ],
+  "sf": [
+    {
+      "home": "Spain",
+      "away": "England",
+      "pred_hg": 0,
+      "pred_ag": 1,
+      "winner": "England",
+      "pens": false
+    },
+    {
+      "home": "Italy",
+      "away": "Switzerland",
+      "pred_hg": 0,
+      "pred_ag": 0,
+      "winner": "Switzerland",
+      "pens": true
+    }
+  ],
+  "final": {
+    "home": "England",
+    "away": "Switzerland",
+    "pred_hg": 1,
+    "pred_ag": 1,
+    "winner": "Switzerland",
+    "pens": true
+  }
+}
