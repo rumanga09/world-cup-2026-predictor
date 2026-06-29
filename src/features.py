@@ -152,10 +152,40 @@ def _form_features(df, team, start, window_years=FORM_WINDOW_YEARS):
     )
 
 
-FEATURE_COLS = [
+# Fitur dasar (absolut, per tim).
+BASE_FEATURES = [
     "elo", "elo_rank", "win_rate", "gf_avg", "ga_avg", "gd_avg",
     "n_matches", "is_host", "past_finals", "past_titles",
 ]
+
+# Fitur RELATIF terhadap lawan se-turnamen. Ini yang paling menaikkan akurasi:
+# yang menentukan juara bukan kekuatan absolut, tapi kekuatan dibanding peserta lain.
+REL_FEATURES = [
+    "elo_z",         # Elo dibanding rata-rata field (z-score)
+    "elo_gap_best",  # selisih Elo terhadap tim terkuat di field
+    "elo_is_top1",   # apakah Elo tertinggi di field
+    "elo_is_top3",   # apakah masuk 3 Elo teratas
+    "form_rank",     # peringkat win-rate di antara peserta
+    "gd_rank",       # peringkat selisih gol di antara peserta
+]
+
+FEATURE_COLS = BASE_FEATURES + REL_FEATURES
+
+
+def add_relative_features(table, group_keys):
+    """Tambahkan fitur kekuatan relatif terhadap field (per turnamen)."""
+    g = table.groupby(group_keys)
+    mean = g["elo"].transform("mean")
+    std = g["elo"].transform("std").replace(0, np.nan).fillna(1.0)
+    mx = g["elo"].transform("max")
+    table["elo_z"] = (table["elo"] - mean) / std
+    table["elo_gap_best"] = table["elo"] - mx
+    table["elo_is_top1"] = (table["elo"] >= mx).astype(int)
+    rank_abs = g["elo"].rank(ascending=False, method="min")
+    table["elo_is_top3"] = (rank_abs <= 3).astype(int)
+    table["form_rank"] = g["win_rate"].rank(pct=True)
+    table["gd_rank"] = g["gd_avg"].rank(pct=True)
+    return table
 
 
 def build_training_table(df):
@@ -224,6 +254,7 @@ def build_training_table(df):
         titles_count[ed["champion"]] = titles_count.get(ed["champion"], 0) + 1
 
     table = pd.DataFrame(rows)
+    table = add_relative_features(table, ["tournament", "year"])
     return table, elo, finals_count, titles_count
 
 
@@ -244,7 +275,10 @@ def build_prediction_table(df, elo, finals_count, titles_count,
             "past_titles": titles_count.get(t, 0),
             **form,
         })
-    return pd.DataFrame(rows)
+    table = pd.DataFrame(rows)
+    table["_field"] = 0  # seluruh peserta 2026 = satu field
+    table = add_relative_features(table, ["_field"])
+    return table
 
 
 def wc2026_teams(df):
