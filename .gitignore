@@ -4,5 +4,4 @@ __pycache__/
 .DS_Store
 .env
 node_modules/
-outputs/*.png
-outputs/*.jpg
+models/
